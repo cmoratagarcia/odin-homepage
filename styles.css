@@ -2,21 +2,32 @@
   --teal:#0f99a6;
   --card-shadow: 0 6px 12px rgba(0,0,0,0.12);
   --max-width:1200px;
-  --font: 'Georgia', 'Times New Roman', serif;
+   --font-heading: "Montserrat", sans-serif;
+  --font-body: Georgia, "Times New Roman", serif;
 }
 
 *{box-sizing:border-box}
 html,body{height:100%}
 body{
   margin:0;
-  font-family:var(--font);
+   font-family: var(--font-body);
   color:#222;
   line-height:1.5;
+}
+
+h1, h2, h3 {
+  font-family: var(--font-heading);
+}
+.container {
+  max-width: var(--max-width);
+  margin: 0 auto;
+  padding: 0 24px;
 }
 
 /* Header hero */
 .site-header{
   background:var(--teal);
+   padding: 48px 0;
 
 }
 /* About card */
@@ -32,6 +43,10 @@ body{
 .about-card p{margin:0 0 16px 0; max-width:60ch; color:#444}
 
 /* Main content */
+.main{
+  max-width:var(--max-width);
+  margin:40px auto;
+}
 /* Cards grid */
 .cards-grid{
   display:grid;
