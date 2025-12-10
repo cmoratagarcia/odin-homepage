@@ -115,3 +115,34 @@ h1, h2, h3 {
 .contact-inner{display:flex; gap:24px; align-items:center}
 .contact-text p{max-width:40ch}
 .contact-photo img{width:300px; max-width:100%; display:block; box-shadow:var(--card-shadow)}
+
+/* Social icons */
+.socials {
+  display: flex;
+  gap: 16px;
+  margin-top: 16px;
+}
+
+.socials a,
+.socials img {
+  display: block;
+}
+
+.socials img {
+  width: 24px;
+  height: 24px;
+  filter: brightness(0) invert(0.2);
+  transition: filter 0.2s ease, transform 0.2s ease;
+}
+
+/* White icons for footer */
+.site-footer .socials img {
+  filter: brightness(0) invert(1);
+   width: 28px;
+  height: 28px;
+}
+
+
+.site-footer .socials {
+  margin-top: 20px;
+}
