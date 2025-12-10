@@ -81,6 +81,10 @@ h1, h2, h3 {
   margin:0 0 12px 0;
 }
 .about-card p{margin:0 0 16px 0; max-width:60ch; color:#444}
+.about-card .socials {
+list-style: none;
+}
+
 
 /* Main content */
 .main{
@@ -100,16 +104,43 @@ h1, h2, h3 {
   overflow:hidden;
 }
 .card-image{
-  height:200px;
-  display:flex;
-  align-items:center;
-  justify-content:center;
-  font-family:var(--serif);
-  font-size:28px;
-  color:white;
-  text-align:center;
-  padding:12px;
+  display: block;
+  width: 100%;
+  height: 300px;
+  object-fit: cover;
+ }
+
+  .card-details {
+  padding: 16px 20px 20px;
 }
+
+.card-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 8px;
+}
+
+.card-header h3 {
+  margin: 0;
+  font-size: 20px;
+}
+
+.card-actions {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  display: flex;
+  gap: 12px;
+}
+
+.card-actions img {
+  width: 22px;
+  height: 22px;
+  filter: brightness(0) invert(0.3); /* matches your body text tone */
+  transition: transform 0.2s ease, filter 0.2s ease;
+}
+
 /* Footer */
 .site-footer{background:var(--teal); color:white; padding:48px 0}
 .contact-inner{display:flex; gap:24px; align-items:center}
