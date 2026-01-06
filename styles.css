@@ -18,11 +18,17 @@ body{
 h1, h2, h3 {
   font-family: var(--font-heading);
 }
+
+.hero-inner.container,
+.contact-inner.container {
+ width: 1400px;
+ 
+}
 .container {
-  max-width: var(--max-width);
   margin: 0 auto;
   padding: 0 24px;
 }
+
 
 /* Header hero */
 .site-header{
@@ -47,9 +53,9 @@ h1, h2, h3 {
 }
 
 .hero-photo{
-  width:320px;
+  width:400px;
   min-width:240px;
-  transform:translateY(-40px);
+  transform:translateY(-30px);
   box-shadow:var(--card-shadow);
   position:relative;
   background:#fff;
@@ -80,7 +86,7 @@ h1, h2, h3 {
   font-size:30px;
   margin:0 0 12px 0;
 }
-.about-card p{margin:0 0 16px 0; max-width:60ch; color:#444}
+.about-card p{margin:0 0 16px 0; max-width:80ch; height: 150px; color:#444}
 .about-card .socials {
 list-style: none;
 width: 30%;
