@@ -150,23 +150,28 @@ margin-left: auto;
 }
 
 /* Footer */
-.site-footer{background:var(--teal); color:white; padding:20px}
+.site-footer{background:var(--teal); color:white; padding:60px}
 .contact-inner {
   display: flex;
   justify-content: space-around;
   align-items: flex-start;
   text-align: left;
 }
+
 .contact-text p {
   margin-bottom: 16px;
+  max-width:70ch;
+ 
 }
-.contact-text p{max-width:50ch;}
+.contact-photo {
+  width: 55%;
+}
 .contact-photo img {
-  flex-grow: 1.5;
   width: 100%;
   height: auto;
   display: block;
- box-shadow:var(--card-shadow)
+ box-shadow:var(--card-shadow);
+
 }
 
 /* Social icons */
