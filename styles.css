@@ -190,7 +190,6 @@ margin-left: auto;
 
 /* White icons for footer */
 .site-footer .socials img {
-  filter: brightness(0) invert(1);
    width: 28px;
   height: 28px;
 }
