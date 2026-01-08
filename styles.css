@@ -92,12 +92,15 @@ h1, h2, h3, .hero-name {
   font-size:30px;
   margin:0 0 12px 0;
 }
-.about-card p{margin:0 0 16px 0; max-width:80ch; height: 150px; color:#444}
+.about-card p{margin:0 0 16px 0; max-width:80ch; color:#444}
 .about-card .socials {
-   margin-top: 2rem;  
+   margin-top: 10%;  
 list-style: none;
 
 }
+.about-card .socials li:first-child {
+    margin-left: auto;
+  }
 
 
 /* Main content */
@@ -242,9 +245,7 @@ list-style: none;
     margin-top: 20%;
   }
 
-  .about-card .socials li:first-child {
-    margin-left: auto;
-  }
+  
 .cards-grid{grid-template-columns:repeat(2,1fr)}
 .contact-inner.container {
   padding: 0;
@@ -273,7 +274,7 @@ list-style: none;
   .about-card .socials {
  text-align: center;
   }
-  .about-socials a {
+  .about-card .socials a {
     margin-left: 0.5rem;
     margin-right: 0.5rem;
   }
